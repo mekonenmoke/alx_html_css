@@ -1,0 +1,31 @@
+body, main {
+    display: flex;
+  }
+  
+  body {
+    flex-direction: column;
+  }
+  
+  main {
+    flex-direction: row;
+    flex: auto;
+  }
+  
+  article {
+    flex: 2;
+    overflow-y: auto;
+    background-color: #fff;
+    border: #000 solid 1px;
+    color: blue;
+  }
+  
+  aside {
+    flex: 1;
+    overflow-y: auto;
+  }
+  @media screen and (min-width: 80rem) {
+    .container {
+      margin: 1em 2em;
+    }
+  }
+  
