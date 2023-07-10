@@ -60,10 +60,6 @@
     --section-footer-align: center;
   
     /** HEADER **/
-.header-container {
-  display: flex;
-  justify-content: space-between;
-}
     /* --header-padding: 4rem 0 0;
     --header-logo-position: relative;
     --header-logo-link-display: inline-block;
@@ -266,18 +262,18 @@
   
   /* Header
       ============================= */
-  
+.header-container {
+  display: flex;
+  justify-content: space-between;
+}
   .header {
     padding: var(--header-padding);
          position: relative;
          z-index: 3;
          background: transparent;
   }
-  .header-container{
-    display: flex;
-    justify-content: space-between;
-  /* }
-  .header-logo {
+  
+ /* .header-logo {
     position: var(--header-logo-position);
   }
   
