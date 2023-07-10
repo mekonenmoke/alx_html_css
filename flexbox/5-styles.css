@@ -60,6 +60,10 @@
     --section-footer-align: center;
   
     /** HEADER **/
+.header-container {
+  display: flex;
+  justify-content: space-between;
+}
     /* --header-padding: 4rem 0 0;
     --header-logo-position: relative;
     --header-logo-link-display: inline-block;
@@ -383,14 +387,15 @@
   }
   
   /* Section Latest news ============================= */
-  .section-latest_news{
-    flex-direction: row-reverse;
-  }
+/* Section Latest news ============================= */
+.section-latest_news{
+  flex-direction: row-reverse;
+}
 
-  /* Section SERVICES ============================= */
-  .section-services {
-    flex-wrap: wrap;
-  }
+/* Section SERVICES ============================= */
+.section-services .row {
+flex-wrap: wrap;
+}
 
   /*** 4. CARD ***/
   
