@@ -218,12 +218,11 @@
   } */
   
   .nav {
+    display: flex;
     margin: 0;
     padding: 0;
     list-style: none;
     text-align: center;
-    display: flex;
-    margin: var(--nav-item-margin);
   }
   
   .nav .nav-item {
@@ -232,9 +231,11 @@
     font-size: var(--nav-item-font-size);
     letter-spacing: var(--nav-item-letter-spacing);
     /* display: var(--nav-item-display); */
-    
   }
   
+.nav-item + .nav-item {
+  margin: var(--nav-item-margin);
+}
   .nav .nav-link {
     display: block;
     padding: 0.5rem 0;
@@ -264,18 +265,18 @@
   
   /* Header
       ============================= */
-  
+.header-container {
+  display: flex;
+  justify-content: space-between;
+}
   .header {
     padding: var(--header-padding);
          position: relative;
          z-index: 3;
          background: transparent;
   }
-  .header-container{
-    display: flex;
-    justify-content: space-between;
-  /* }
-  .header-logo {
+  
+ /* .header-logo {
     position: var(--header-logo-position);
   }
   
@@ -385,14 +386,15 @@
   }
   
   /* Section Latest news ============================= */
-  .section-latest_news{
-    flex-direction: row-reverse;
-  }
+/* Section Latest news ============================= */
+.section-latest_news{
+  flex-direction: row-reverse;
+}
 
-  /* Section SERVICES ============================= */
-  .section-services {
-    flex-wrap: wrap;
-  }
+/* Section SERVICES ============================= */
+.section-services .row {
+flex-wrap: wrap;
+}
 
   /*** 4. CARD ***/
   
