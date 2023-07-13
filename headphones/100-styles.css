@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-image: url("images/headphones_hero_1.jpg");
+  color: #fff;
+}
+ .nav {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: start;
+  padding: 40px;
+  text-align: center;
+  column-gap: 30px;
+  }
+  .nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+  }
+
+  .nav-menu {
+    position: relative;
+    display: inline-block; 
+  }
+  
+
+  .nav-menu-logo {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .nav-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: none;
+    
+  }
+  
+  .nav-list li {
+    padding: 10px;
+    margin-left: 200px;
+  }
+  
+  .nav-menu:hover .nav-list {
+    display: block;
+  } 
+
+/*Main content in mobile version*/
+.main-container {
+  /* padding: auto 100px; */
+  /* padding-left: 40px;
+  padding-right: 40px; */
+  margin: 50px auto;
+  /* margin-right: auto; */
+  text-align: center;
+  /* max-width: 1000px; */
+ 
+}
+.wed-container{
+max-width: 1000px;
+text-align: center;
+margin: 50px auto;
+}
+.service-logo {
+  margin: 20px auto;
+}
+.services {
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 30px;
+}
+
+.about {
+background-image: url("images/headphones_hero_2.jpg");
+color: #fff;
+margin: 50px auto;
+}
+
+/* .about-main {
+max-width: 100px;
+background-color: #FF6565;
+}*/
+.about-main .about-title {
+margin: 20px auto;
+}
+.about-main, .costinfo { 
+max-width: 1000px;
+text-align: center;
+}
+.costinfo { 
+display: flex;
+flex-direction: column;
+justify-content: center;
+row-gap: 40px;
+margin: 40px auto;
+}
+/*Contact us*/
+.contact-title {
+  margin: 20px auto;
+}
+.input-gap {
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid rgb(106, 100, 100);
+  outline: none;
+}
+.input-gap::placeholder {
+  color: black;
+  font-size: 14px;
+  }
+.pentagon {
+  position: relative;
+  width: 4.4rem;
+  box-sizing: content-box;
+  border-width: 2.0rem 1.8rem 0rem;
+  border-style: solid;
+  border-color: rgb(243, 18, 18);
+  &::before {
+    content: "+2% lorem lorem lorem";
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -5.5rem;
+    left: -1.8rem;
+    border-width: 0rem 4rem 3.5rem;
+    border-style: solid;
+    border-color: transparent transparent rgb(243, 18, 18);
+  }
+}
+  
+
+/*Mobile version*/
+@media (min-width: 481px) {
+/* @media (min-width: 481px) {*/
+  
+/* Navbar
+    ============================= */
+    .nav {
+      max-width: 1000px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      padding: 10px;
+      text-align: center;
+      
+      }
+      .nav-menu {
+        display: flex; 
+        align-items: center;
+      }
+      
+      .nav-menu-logo {
+        display: none;
+        padding: 0;
+        cursor: auto; 
+      }
+      
+      .nav-list {
+  
+        margin-top: -90px;
+        margin-left: -100px; 
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+       
+      }
+      
+      .nav-list li {
+        margin-left: 40px;
+
+      }
+      .nav-list li:first-child {
+        margin-left: 0;
+      }
+      .nav-menu:hover .nav-list {
+        display: flex;
+      }
+   
+/* Header Title */
+.header-title {
+  margin-top: 230px;
+  text-align: center;
+
+}
+.header-title .title-p{
+ /* margin-top: -20px; */
+}
+.header-title .title-button{
+  margin-top: 10px;
+}
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: #FF6565;
+  color: white;
+}
+
+/*Header description*/
+.header-description {
+  margin: 50px auto;
+  padding-bottom: 20px;
+  max-width: 1000px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  text-align: center;
+}
+
+/*Main for Desktop version*/
+
+.services {
+  margin: 40px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  column-gap: 30px;
+}
+
+.costinfo {
+display: flex;
+flex-direction: row;
+justify-content: center;
+column-gap: 40px;
+}
+
+
+}
+
+/* Links hover/active */
+a:hover,
+a:active {
+color: #FF6565;
+}
+
+/* Button hover/active */
+button:hover,
+button:active {
+opacity: 0.9;
+}
