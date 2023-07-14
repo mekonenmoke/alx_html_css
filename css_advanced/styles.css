@@ -16,6 +16,8 @@
     align-items: center;
     
 }
+
+
 .logo {
     width: 167.01577758789062px;
     height: 29.46099090576172px;
@@ -48,4 +50,63 @@
     width: 1440px;
     height: 1093px;
     background-image: url("CSS Advanced/Object.png");
+}
+.get-schooled {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 220.00000000000023px;
+    margin-left: 377.0000000000001px;
+    color: #FFFFFF;
+}
+.get-schooled .title h1{
+    font-size: 120px;
+    font-weight: 700;
+    line-height: 151px;
+    letter-spacing: 0px;
+    text-align: center;
+}
+.get-schooled .subtitle{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: center;
+
+}
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #C271FF;
+    color: FFFFFF;
+   
+
+}
+.get-schooled .button {
+    justify-content: center;
+    margin-left: 300px;
+    margin-top: 40px
+}
+.pros {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 631.0000000000002px;
+    margin-left: 604.0000000000001px;
+}
+.pros-users {
+    position: absolute;
+    display: flex;
+    border: 2px solid red;
+    justify-content: space-between;
+    width: 1009px;
+    height: 237px;
+    margin-top: 758.0000000000002px;
+    margin-left: 217.0000000000001px;
+
 }
